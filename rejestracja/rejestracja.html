@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    
+    <div class="reg">
+        <form class="form" action="validation.php" method="post">
+            <div class="form-row">
+                <label for="formFirstName">Imię:</label>
+                <input type="text" id="formFirstName" class="form">
+            </div>
+            
+            <div class="form-row">
+                <label for="formLastName">Nazwisko:</label>
+                <input type="text" id="formLastName">
+            </div>
+            
+            <div class="form-row">
+                <label for="formEmail">Email</label>
+                <input type="email" id="formEmail" required placeholder="Email">
+            </div>
+            
+            <div class="form-row">
+                <label for="formacademyName">Uczelnia:</label>
+                <input type="text" id="formacademyName">
+            </div>
+            
+            <fieldset class="form-row">
+                <label>Rok studiów:</label>
+                <input type="radio" required name="level"  > 1
+                <input type="radio" required name="level"  > 2
+                <input type="radio" required name="level"  > 3
+                <input type="radio" required name="level"  > 4
+                <input type="radio" required name="level"  > 5
+            </fieldset>
+        
+            <fieldset class="form-row">
+                <!-- PHP -->
+                <label>Zaznacz tematykę która Cię interesuje: </label>
+                <input type="checkbox" required name="test2"  > 1
+                <input type="checkbox" required name="test2"  > 2
+                <input type="checkbox" required name="test2"  > 3
+                <input type="checkbox" required name="test2"  > 4
+                <input type="checkbox" required name="test2"  > 5
+            </fieldset>
+            
+            <div class="form-row">
+                <input type="submit" value="Wyślij"  >
+            </div>
+        </form>
+        
+        
+        <script src="validation.js"></script>
+        
+    </div>
+    
+    
+    
+</body>
+</html>
