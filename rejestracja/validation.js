@@ -3,6 +3,9 @@ const formLastName = document.querySelector('#formLastName');
 const formEmail = document.querySelector('#formEmail');
 const formacademyName = document.querySelector('#formacademyName');
 
+// ToDo: Dodać klasę .good
+//       Dodać walidację dla uczelni
+//       Zmienić walidację dla subjects
 
 function valid(field, reg) {
 
@@ -14,9 +17,8 @@ function valid(field, reg) {
         case 2:
             break;
         default:
-            reg = new RegExp('^[a-zA-Z]{3,}$', 'g');  
+            reg = new RegExp('^[a-zA-Z]{3,}$', 'g');
     }
-    
 
     field.addEventListener('change', function () {
         if (!reg.test(this.value)) {
@@ -30,4 +32,4 @@ function valid(field, reg) {
 valid(formFirstName);
 valid(formLastName);
 valid(formEmail, 1);
-valid(formacademyName);
+valid(formacademyName, 2);

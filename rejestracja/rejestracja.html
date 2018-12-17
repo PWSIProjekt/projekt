@@ -8,59 +8,57 @@
     <link rel="stylesheet" href="validation.css">
 </head>
 <body>
-    
+
     <div class="reg">
-        <form class="form" action="validation.php" method="post">
+        <form class="form" action="validation.php" method="POST">
             <div class="form-row">
                 <label for="formFirstName">Imię:</label>
-                <input type="text" id="formFirstName" class="form">
+                <input type="text" id="formFirstName" class="form" name="formFirstName">
             </div>
-            
+
             <div class="form-row">
                 <label for="formLastName">Nazwisko:</label>
-                <input type="text" id="formLastName">
+                <input type="text" id="formLastName" name="formLastName">
             </div>
-            
+
             <div class="form-row">
                 <label for="formEmail">Email</label>
-                <input type="email" id="formEmail" required placeholder="Email">
+                <input type="email" id="formEmail" name="formEmail" required placeholder="Email">
             </div>
-            
+
             <div class="form-row">
                 <label for="formacademyName">Uczelnia:</label>
-                <input type="text" id="formacademyName">
+                <input type="text" id="formacademyName" name="formacademyName">
             </div>
-            
+
             <fieldset class="form-row">
                 <label>Rok studiów:</label>
-                <input type="radio" required name="level"  > 1
-                <input type="radio" required name="level"  > 2
-                <input type="radio" required name="level"  > 3
-                <input type="radio" required name="level"  > 4
-                <input type="radio" required name="level"  > 5
+                <input type="radio" value="1" required name="formLevel"> 1
+                <input type="radio" value="2" required name="formLevel"> 2
+                <input type="radio" value="3" required name="formLevel"> 3
+                <input type="radio" value="4" required name="formLevel"> 4
+                <input type="radio" value="5" required name="formLevel"> 5
             </fieldset>
-        
+
             <fieldset class="form-row">
                 <!-- PHP -->
+                <!-- ToDO Ogarnąć ten szit -->
                 <label>Zaznacz tematykę która Cię interesuje: </label>
-                <input type="checkbox" required name="test2"  > 1
-                <input type="checkbox" required name="test2"  > 2
-                <input type="checkbox" required name="test2"  > 3
-                <input type="checkbox" required name="test2"  > 4
-                <input type="checkbox" required name="test2"  > 5
+                <input type="checkbox" value="a" required name="formSubjects"> 1
+                <input type="checkbox" value="b" required name="formSubjects"> 2
             </fieldset>
-            
+
             <div class="form-row">
-                <input type="submit" value="Wyślij"  >
+                <input type="submit" value="Wyślij">
             </div>
         </form>
-        
-        
+
+
         <script src="validation.js"></script>
-        
+
     </div>
-    
-    
-    
+
+
+
 </body>
 </html>
