@@ -3,3 +3,52 @@ Tło - granat
 Główny kolor - czerwień
 Akcenty - jasny zielony
 Tekst na Tle - biały, czerwony */
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(1, 1, 46);
+}
+
+/* Header */
+
+header {
+    height: 25vh;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3rem;
+}
+
+.header__title {
+    font-size: 3rem;
+    letter-spacing: 6px;
+    font-weight: 700;
+}
+
+.header__title-red {
+    color: rgb(255, 0, 0);
+}
+
+.header__subtitle {
+    font-size: 1rem;
+}
+
+.header__subtitle-2 {
+    font-size: 1.5rem;
+}
+
+/* END HEADER  */
+
+/* Nav */
+
+nav {
+    display: flex;
+}
+
+.nav {
+    height: 10vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+/* END Nav */
