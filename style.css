@@ -13,16 +13,17 @@ Tekst na Tle - biały, czerwony */
 /* Header */
 
 header {
-    background-color: rgb(1, 1, 46);
+    background: linear-gradient(130deg, rgb(3, 3, 36), rgb(32, 32, 136));
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 1rem;
 }
 
 .header__title {
-    font-size: 3rem;
+    font-size: 6rem;
     letter-spacing: 6px;
-    font-weight: 700;
+    font-weight: 500;
+    /* text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c; */
 }
 
 .header__title-red {
@@ -30,7 +31,7 @@ header {
 }
 
 .header__subtitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .header__subtitle-2 {
@@ -94,7 +95,7 @@ nav {
 }
 
 .invitation__name {
-    border-bottom: solid 3px rgb(26, 201, 3);
+    border-bottom: solid 3px rgb(152, 253, 0);
     margin: 1rem;
     color: white;
     grid-area: name;
@@ -105,3 +106,59 @@ nav {
 }
 
 /* END invitation */
+
+a {
+    color: rgb(152, 253, 0);
+}
+
+li {
+    list-style: none;
+}
+
+/* ABOUT__EVENT */
+.about__event {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 10% 40% 10% 40%;
+  grid-template-areas: " . header . ."
+             ". about1 . ."
+             ". . . ."
+             ". . about2 .";
+  justify-items: center;    
+}
+
+.about__event_adv-1, .about__event_adv-2 {
+    background-color: azure;
+    width: 600px;
+    height: 250px;
+ 
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(1, 1, 46);
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.85);
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.about__event_title {
+    grid-area: header;
+}
+
+.about__event_adv-1 {
+    grid-area: about1;
+}
+.about__event_adv-2 {
+    grid-area: about2;
+}
+
+.about__event_title-green {
+    color: rgb(152, 253, 0);
+    font-size: 1.5rem;
+}
+
+
+/* END ABOUT__EVENT */
+
